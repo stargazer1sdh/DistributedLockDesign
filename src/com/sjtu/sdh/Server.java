@@ -56,7 +56,7 @@ public class Server {
 				PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 				out.println(Message.FOLLOW + " " + server.address + " " + server.port);
 				System.out
-						.println(Message.FOLLOW + " " + server.address + " " + server.port + " " + in.readLine());
+						.println(Message.FOLLOW + " leader at " + leaderBean.address + " " + leaderBean.port + " " + in.readLine());
 				out.close();
 				while (true) {
 					new Thread(new ServerRunable(serverSocket.accept(), server.isLeader)).start();
