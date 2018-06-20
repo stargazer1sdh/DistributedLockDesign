@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+    <server>
+        <address>127.0.0.1</address>
+        <port>4444</port>
+    </server>
+
