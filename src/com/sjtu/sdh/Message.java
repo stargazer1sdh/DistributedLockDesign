@@ -1,7 +1,6 @@
 package com.sjtu.sdh;
 
 /**
- * Created by chenzhongpu on 3/20/16.
  *
  * Message class includes constant message type.
  */

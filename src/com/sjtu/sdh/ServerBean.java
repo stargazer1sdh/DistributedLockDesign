@@ -1,7 +1,6 @@
 package com.sjtu.sdh;
 
 /**
- * Created by chenzhongpu on 3/17/16.
  *
  * ServerBean is a java bean, describing the basic server infomation,
  * including address, port, and whether it is a leader
