@@ -20,7 +20,7 @@ public class Client {
     
     public static void main(String[] args ) {
     	 if (args.length != 2) {
-             System.err.println("Error: client --address --port");
+             System.err.println("Error: client --address --port ");
              System.exit(1);
          }
     	 
