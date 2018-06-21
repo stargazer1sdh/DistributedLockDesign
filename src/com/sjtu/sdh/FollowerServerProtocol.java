@@ -123,10 +123,12 @@ public class FollowerServerProtocol extends ServerProtocol {
             case Message.CHECKISOWN:
                 result = handleClientCheckOwn(msg.getClientId(),
                         (String)msg.getMessageContent());
+				System.out.println("My echo: "+result);
                 break;
             case Message.APPLY:
                 result = handleClientApply(msg.getClientId(),
                         (String)msg.getMessageContent());
+                System.out.println("My echo: "+result);
                 break;
             case Message.BROADCAST:
                 Server.lockMap.clear();
@@ -137,6 +139,7 @@ public class FollowerServerProtocol extends ServerProtocol {
             case Message.RELEASE:
                 result = handleClientRelease(msg.getClientId(),
                         (String)msg.getMessageContent());
+                System.out.println("My echo: "+result);
                 break;
             default:
                 result = "";

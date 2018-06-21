@@ -28,7 +28,7 @@ public class LeaderServerProtocol extends ServerProtocol {
      * when the map is modified.
      */
     private void broadcast() {
-
+    	System.out.println("broadcast lockMap to all follows");
         ClientMsg broadcastMsg = new ClientMsg();
         broadcastMsg.setMessageType(Message.BROADCAST);
         broadcastMsg.setMessageContent(gson.toJson(Server.lockMap));
@@ -124,6 +124,7 @@ public class LeaderServerProtocol extends ServerProtocol {
                 result = "";
 
         }
+        System.out.println("My echo: "+result);
         return result;
     }
 

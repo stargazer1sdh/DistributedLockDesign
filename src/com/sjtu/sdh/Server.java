@@ -125,9 +125,8 @@ class ServerRunable implements Runnable {
 					out.println("SUCCESS");
 					System.out.println("Follow at " + newip + ":" + newport + " joins.");
 				} else if (!input.startsWith(Message.HELLO)) {
-
+					System.out.println("recieved input: "+input);
 					String echo = serverProtocol.processInput(input);
-
 					if (echo != null && echo.equals(Message.ECHO_BROADCAST)) {
 						break;
 					}
