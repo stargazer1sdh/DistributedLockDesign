@@ -3,7 +3,6 @@ package com.sjtu.sdh;
 import java.util.List;
 
 /**
- * Created by chenzhongpu on 3/17/16.
  *
  * @see ServerProtocol
  *

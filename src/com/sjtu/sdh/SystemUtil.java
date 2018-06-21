@@ -23,12 +23,6 @@ import java.util.Map;
 
 public class SystemUtil {
 
-	/**
-	 * get all the servers from config file (serverConfig.xml)
-	 * 
-	 * @see ServerBean
-	 * @return servers
-	 */
 	public static ServerBean loadLeader() {
 
 		ServerBean server = null;
